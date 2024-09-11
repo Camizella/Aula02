@@ -1,15 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import SegundoComponente from './Components/SegundoComponent';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-import PrimeiroComponente from './Components/PrimeiroComponente';
+
+import { BrowserRouter } from 'react-router-dom';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <PrimeiroComponente />
-    <SegundoComponente />
+    <BrowserRouter>
+    <App/>
+    </BrowserRouter>
+  
   </React.StrictMode>
 );
 
